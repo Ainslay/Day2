@@ -12,7 +12,7 @@ namespace Day2.Tests
         [ClassData(typeof(ChefConstructionData))]
         public void Given_InvalidParameters_When_ConstructingChef_Then_ThrowsException(string name, string surname)
         {
-            Assert.Throws<Exception>(() => new Waiter(name, surname));
+            Assert.Throws<Exception>(() => new Chef(name, surname));
         }
 
         [Fact]
